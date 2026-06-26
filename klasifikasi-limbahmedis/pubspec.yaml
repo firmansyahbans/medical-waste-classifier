@@ -1,0 +1,42 @@
+name: medwaste
+description: Aplikasi Deteksi Limbah Medis - MedWaste AI
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tflite_v2: ^1.0.0 
+  image_picker: ^1.0.4
+  camera: ^0.10.5
+  permission_handler: ^11.3.1
+  http: ^1.2.1
+  shared_preferences: ^2.2.3
+  intl: ^0.19.0
+  pdf: ^3.10.8
+  printing: ^5.12.0
+  google_fonts: ^8.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/model_k3rs.tflite
+    - assets/labels_k3rs.txt
+    - assets/logo_k3rs.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo_k3rs.png"
+  min_sdk_android: 21
